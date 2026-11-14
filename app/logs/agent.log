@@ -1,0 +1,460 @@
+2026-11-13 14:11:30,183 | INFO | shopping_assistant | Shopping assistant started.
+2026-11-13 14:11:30,183 | WARNING | shopping_assistant | Product search took longer than expected.
+2026-11-13 14:11:30,183 | ERROR | shopping_assistant | Database query failed.
+2026-11-13 14:11:30,184 | CRITICAL | shopping_assistant | Critical application failure.
+2026-11-13 14:45:49,572 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 14:45:49,575 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:00:51,529 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:00:51,532 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:11:05,490 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:11:05,492 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:11:05,494 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:11:05,495 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 15:11:17,187 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:11:17,189 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:11:17,191 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:11:17,192 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 15:18:01,395 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:18:01,396 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:18:01,398 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:18:01,399 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 15:30:30,271 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:30:30,272 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:30:30,274 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:30:30,275 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 15:35:57,169 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:35:57,170 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:35:57,172 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 15:35:57,173 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 15:49:05,697 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 15:49:05,700 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 15:49:06,813 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 15:49:06,820 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 15:49:06,821 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 15:49:07,245 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 15:49:07,270 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 15:49:07,273 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 15:49:07,779 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 15:49:07,798 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 15:49:07,803 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 15:49:07,809 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 15:49:07,811 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 15:49:09,092 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 16:19:56,065 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 16:19:56,066 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:19:56,544 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 16:19:56,555 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 16:19:56,557 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:19:57,226 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 16:19:57,246 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 16:19:57,250 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:19:57,802 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 16:19:57,807 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 16:19:57,810 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 16:19:57,813 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 16:19:57,816 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:19:58,541 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 16:43:31,077 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 16:43:31,079 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 16:43:31,080 | INFO | shopping_assistant | Product search started | category=honey | max_price=None | sort_by=price_desc
+2026-11-13 16:43:31,081 | INFO | shopping_assistant | Product search completed | result_count=8
+2026-11-13 16:43:47,374 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 16:43:47,374 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:43:48,653 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 16:43:48,664 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 16:43:48,666 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:43:49,227 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 16:43:49,242 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 16:43:49,249 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:43:49,718 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 16:43:49,734 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 16:43:49,743 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 16:43:49,750 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 16:43:49,753 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 16:43:50,484 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 17:19:42,731 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 17:19:42,732 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:19:43,543 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 17:19:43,556 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 17:19:43,558 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:19:43,968 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 17:19:43,994 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 17:19:44,001 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:19:44,546 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 17:19:44,558 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 17:19:44,563 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 17:19:44,568 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 17:19:44,571 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:19:45,265 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 17:26:04,645 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 17:26:04,646 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:26:05,653 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 17:26:05,659 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 17:26:05,661 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:26:06,419 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 17:26:06,436 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 17:26:06,440 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:26:06,909 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 17:26:06,913 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 17:26:06,915 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 17:26:06,918 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 17:26:06,920 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 17:26:07,629 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 21:27:56,259 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 21:27:56,261 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 21:28:03,833 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 21:28:03,840 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 21:28:03,841 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 21:28:04,453 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 21:28:04,467 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 21:28:04,470 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 21:28:04,867 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 21:28:04,883 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 21:28:04,890 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 21:28:04,895 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 21:28:04,898 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 21:28:05,711 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 22:55:26,846 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 22:55:26,847 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:28,257 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 22:55:28,267 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 22:55:28,270 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:28,850 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 22:55:28,865 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 22:55:28,872 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 22:55:28,890 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 22:55:28,895 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:29,832 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 22:55:29,840 | INFO | shopping_assistant | Graph execution completed | duration_seconds=3.002
+2026-11-13 22:55:29,857 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 22:55:29,861 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:30,370 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 22:55:30,392 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 22:55:30,398 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:30,731 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=1
+2026-11-13 22:55:30,746 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 22:55:30,750 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 22:55:30,756 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 22:55:30,760 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 22:55:31,515 | INFO | shopping_assistant | LLM invocation completed | tool_call_count=0
+2026-11-13 22:55:31,524 | INFO | shopping_assistant | Graph execution completed | duration_seconds=1.680
+2026-11-13 23:04:00,371 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:04:00,373 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:04:00,373 | ERROR | shopping_assistant | LLM invocation failed | duration_seconds=0.000
+Traceback (most recent call last):
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\app\graph_agent.py", line 120, in call_llm
+    response = llm_with_tools.invoke(...)
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6018, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 530, in invoke
+    [self._convert_input(input)],
+     ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 513, in _convert_input
+    raise ValueError(msg)
+ValueError: Invalid input type <class 'ellipsis'>. Must be a PromptValue, str, or list of BaseMessages.
+2026-11-13 23:04:00,382 | ERROR | shopping_assistant | Graph execution failed | duration_seconds=0.027
+Traceback (most recent call last):
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\app\graph_agent.py", line 315, in <module>
+    result1 = graph.invoke(
+        {"messages": [HumanMessage(content="Find honey products.")]},
+        config1
+    )
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4000, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<11 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3060, in stream
+    for _ in runner.tick(
+             ~~~~~~~~~~~^
+        [t for t in loop.tasks.values() if not t.writes],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        schedule_task=loop.accept_push,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 204, in tick
+    run_with_retry(
+    ~~~~~~~~~~~~~~^
+        t,
+        ^^
+    ...<10 lines>...
+        },
+        ^^
+    )
+    ^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 618, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 794, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 479, in invoke
+    ret = self.func(*args, **kwargs)
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\app\graph_agent.py", line 120, in call_llm
+    response = llm_with_tools.invoke(...)
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6018, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 530, in invoke
+    [self._convert_input(input)],
+     ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\Agentic ai\agentic-shopping-assistant\agentic-shopping-assistant\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 513, in _convert_input
+    raise ValueError(msg)
+ValueError: Invalid input type <class 'ellipsis'>. Must be a PromptValue, str, or list of BaseMessages.
+During task with name 'llm' and id 'd7bd41b8-63e7-a158-6e7c-5db1f54eae0b'
+2026-11-13 23:09:22,293 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:09:22,294 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:23,740 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.446 | tool_call_count=1
+2026-11-13 23:09:23,747 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:09:23,750 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:24,519 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.768 | tool_call_count=1
+2026-11-13 23:09:24,534 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:09:24,542 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 23:09:24,550 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 23:09:24,558 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:25,243 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.684 | tool_call_count=1
+2026-11-13 23:09:25,265 | INFO | shopping_assistant | LLM node started | message_count=7
+2026-11-13 23:09:25,269 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:26,100 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.830 | tool_call_count=0
+2026-11-13 23:09:26,110 | INFO | shopping_assistant | Graph execution completed | duration_seconds=3.826
+2026-11-13 23:09:26,128 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:09:26,132 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:27,067 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.935 | tool_call_count=1
+2026-11-13 23:09:27,072 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:09:27,073 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:27,840 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.767 | tool_call_count=1
+2026-11-13 23:09:27,854 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:09:27,862 | INFO | shopping_assistant | Product search completed | result_count=7
+2026-11-13 23:09:27,870 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 23:09:27,875 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:09:29,095 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.218 | tool_call_count=0
+2026-11-13 23:09:29,103 | INFO | shopping_assistant | Graph execution completed | duration_seconds=2.988
+2026-11-13 23:26:58,287 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:26:58,288 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:26:59,477 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.189 | tool_call_count=1
+2026-11-13 23:26:59,480 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:26:59,482 | INFO | shopping_assistant | Product search completed | duration_seconds=0.001 | result_count=7
+2026-11-13 23:26:59,484 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:26:59,486 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:27:00,288 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.802 | tool_call_count=0
+2026-11-13 23:27:00,296 | INFO | shopping_assistant | Graph execution completed | duration_seconds=2.017
+2026-11-13 23:27:00,313 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:27:00,317 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:27:00,786 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.467 | tool_call_count=1
+2026-11-13 23:27:00,799 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:27:00,808 | INFO | shopping_assistant | Product search completed | duration_seconds=0.007 | result_count=7
+2026-11-13 23:27:00,817 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:27:00,825 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:27:01,331 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.505 | tool_call_count=1
+2026-11-13 23:27:01,355 | INFO | shopping_assistant | LLM node started | message_count=5
+2026-11-13 23:27:01,362 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:27:02,740 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.377 | tool_call_count=0
+2026-11-13 23:27:02,750 | INFO | shopping_assistant | Graph execution completed | duration_seconds=2.451
+2026-11-13 23:39:04,082 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:39:04,083 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:39:08,157 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=4.074 | tool_call_count=1
+2026-11-13 23:39:08,164 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:39:08,167 | INFO | shopping_assistant | Product search completed | duration_seconds=0.003 | result_count=7
+2026-11-13 23:39:08,169 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:39:08,170 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:39:09,049 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.879 | tool_call_count=0
+2026-11-13 23:39:09,053 | INFO | shopping_assistant | Graph execution completed | duration_seconds=4.978
+2026-11-13 23:39:09,059 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:39:09,061 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:39:09,624 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.562 | tool_call_count=1
+2026-11-13 23:39:09,630 | INFO | shopping_assistant | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-13 23:39:09,634 | INFO | shopping_assistant | Product search completed | duration_seconds=0.003 | result_count=7
+2026-11-13 23:39:09,638 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:39:09,640 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:39:10,561 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.920 | tool_call_count=0
+2026-11-13 23:39:10,569 | INFO | shopping_assistant | Graph execution completed | duration_seconds=1.515
+2026-11-13 23:45:29,964 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:45:29,965 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:45:31,510 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.545 | tool_call_count=1
+2026-11-13 23:45:31,513 | INFO | shopping_assistant | Product check started | product_name=Clover Honey
+2026-11-13 23:45:31,514 | INFO | shopping_assistant | Product check completed | duration_seconds=0.001 | found=True
+2026-11-13 23:45:31,516 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:45:31,517 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:45:33,034 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.516 | tool_call_count=0
+2026-11-13 23:45:33,045 | INFO | shopping_assistant | Graph execution completed | duration_seconds=3.088
+2026-11-13 23:45:33,057 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:45:33,060 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:45:33,535 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.474 | tool_call_count=1
+2026-11-13 23:45:33,552 | INFO | shopping_assistant | Product check started | product_name=Clover Honey
+2026-11-13 23:45:33,560 | INFO | shopping_assistant | Product check completed | duration_seconds=0.008 | found=True
+2026-11-13 23:45:33,567 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:45:33,570 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:45:34,738 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.167 | tool_call_count=0
+2026-11-13 23:45:34,749 | INFO | shopping_assistant | Graph execution completed | duration_seconds=1.700
+2026-11-13 23:55:49,045 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:55:49,046 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:55:50,824 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=1.777 | tool_call_count=1
+2026-11-13 23:55:50,829 | INFO | shopping_assistant | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-13 23:55:50,853 | INFO | shopping_assistant | Product comparison completed | duration_seconds=0.024 | status=success
+2026-11-13 23:55:50,855 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:55:50,856 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:55:51,729 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.873 | tool_call_count=0
+2026-11-13 23:55:51,733 | INFO | shopping_assistant | Graph execution completed | duration_seconds=2.696
+2026-11-13 23:55:51,740 | INFO | shopping_assistant | LLM node started | message_count=1
+2026-11-13 23:55:51,742 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:55:52,160 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.417 | tool_call_count=1
+2026-11-13 23:55:52,173 | INFO | shopping_assistant | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-13 23:55:52,182 | INFO | shopping_assistant | Product comparison completed | duration_seconds=0.009 | status=success
+2026-11-13 23:55:52,189 | INFO | shopping_assistant | LLM node started | message_count=3
+2026-11-13 23:55:52,195 | INFO | shopping_assistant | Customer preferences retrieved | preference_count=3
+2026-11-13 23:55:53,092 | INFO | shopping_assistant | LLM invocation completed | duration_seconds=0.896 | tool_call_count=0
+2026-11-13 23:55:53,101 | INFO | shopping_assistant | Graph execution completed | duration_seconds=1.367
+2026-11-14 00:30:58,215 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=- | New agent request started | conversation=1 | trace_id=12e6a05f9bda41b9a2eb874d19becfc9
+2026-11-14 00:30:58,216 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 00:30:58,225 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | LLM node started | message_count=1
+2026-11-14 00:30:58,226 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Customer preferences retrieved | preference_count=3
+2026-11-14 00:30:58,226 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=be1e2f588b114d73bd2bd6f6fa7c2a69 | Span started | span_name=llm.invoke | parent_span_id=0d281f5814024fe794e521b9108e5963
+2026-11-14 00:30:59,179 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=be1e2f588b114d73bd2bd6f6fa7c2a69 | Span completed | span_name=llm.invoke | duration_seconds=0.953
+2026-11-14 00:30:59,180 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | LLM invocation completed | duration_seconds=0.953 | tool_call_count=1
+2026-11-14 00:30:59,184 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 00:30:59,188 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Product comparison completed | duration_seconds=0.004 | status=success
+2026-11-14 00:30:59,191 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | LLM node started | message_count=3
+2026-11-14 00:30:59,195 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Customer preferences retrieved | preference_count=3
+2026-11-14 00:30:59,196 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=1c4ea625aa534f23a6138d4793ce4c38 | Span started | span_name=llm.invoke | parent_span_id=0d281f5814024fe794e521b9108e5963
+2026-11-14 00:30:59,767 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=1c4ea625aa534f23a6138d4793ce4c38 | Span completed | span_name=llm.invoke | duration_seconds=0.571
+2026-11-14 00:30:59,767 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | LLM invocation completed | duration_seconds=0.571 | tool_call_count=0
+2026-11-14 00:30:59,770 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=0d281f5814024fe794e521b9108e5963 | Span completed | span_name=graph.invoke | duration_seconds=1.554
+2026-11-14 00:30:59,771 | INFO | shopping_assistant | trace_id=12e6a05f9bda41b9a2eb874d19becfc9 | span_id=- | Graph execution completed | duration_seconds=1.555
+2026-11-14 00:30:59,771 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=- | New agent request started | conversation=2 | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d
+2026-11-14 00:30:59,772 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 00:30:59,776 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | LLM node started | message_count=1
+2026-11-14 00:30:59,777 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Customer preferences retrieved | preference_count=3
+2026-11-14 00:30:59,778 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=dafee5cb6e66443fb0d35e166ed600de | Span started | span_name=llm.invoke | parent_span_id=81c4f7ff0a814f59a0f1b07d148b5b6f
+2026-11-14 00:31:00,359 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=dafee5cb6e66443fb0d35e166ed600de | Span completed | span_name=llm.invoke | duration_seconds=0.581
+2026-11-14 00:31:00,360 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | LLM invocation completed | duration_seconds=0.582 | tool_call_count=1
+2026-11-14 00:31:00,368 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 00:31:00,374 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Product comparison completed | duration_seconds=0.006 | status=success
+2026-11-14 00:31:00,377 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | LLM node started | message_count=3
+2026-11-14 00:31:00,378 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Customer preferences retrieved | preference_count=3
+2026-11-14 00:31:00,379 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=e74bcefec5ab405ab7276992adbacc5a | Span started | span_name=llm.invoke | parent_span_id=81c4f7ff0a814f59a0f1b07d148b5b6f
+2026-11-14 00:31:01,144 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=e74bcefec5ab405ab7276992adbacc5a | Span completed | span_name=llm.invoke | duration_seconds=0.766
+2026-11-14 00:31:01,145 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | LLM invocation completed | duration_seconds=0.766 | tool_call_count=0
+2026-11-14 00:31:01,148 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=81c4f7ff0a814f59a0f1b07d148b5b6f | Span completed | span_name=graph.invoke | duration_seconds=1.376
+2026-11-14 00:31:01,149 | INFO | shopping_assistant | trace_id=7dbaa5cfd04441239b7988a0cdf5f78d | span_id=- | Graph execution completed | duration_seconds=1.377
+2026-11-14 09:42:10,446 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=- | New agent request started | conversation=1 | trace_id=96058731325b4cbbb535535ba8850703
+2026-11-14 09:42:10,447 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 09:42:10,456 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | LLM node started | message_count=1
+2026-11-14 09:42:10,457 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:10,457 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=0cba793e212349eb9a9fb786f5c64fbb | Span started | span_name=llm.invoke | parent_span_id=6e6ea481cac14a94827fe240ba9c27d1
+2026-11-14 09:42:11,698 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=0cba793e212349eb9a9fb786f5c64fbb | Span completed | span_name=llm.invoke | duration_seconds=1.241
+2026-11-14 09:42:11,698 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | LLM invocation completed | duration_seconds=1.241 | tool_call_count=1
+2026-11-14 09:42:11,702 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=67420e3d6ac849d58f58b9b5d5a02a05 | Span started | span_name=tool.compare_product | parent_span_id=6e6ea481cac14a94827fe240ba9c27d1
+2026-11-14 09:42:11,702 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=67420e3d6ac849d58f58b9b5d5a02a05 | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 09:42:11,704 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=67420e3d6ac849d58f58b9b5d5a02a05 | Product comparison completed | duration_seconds=0.002 | status=success
+2026-11-14 09:42:11,705 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=67420e3d6ac849d58f58b9b5d5a02a05 | Span completed | span_name=tool.compare_product | duration_seconds=0.003
+2026-11-14 09:42:11,707 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | LLM node started | message_count=3
+2026-11-14 09:42:11,712 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:11,713 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=2cb4824c72b14f17a412bec684f085a5 | Span started | span_name=llm.invoke | parent_span_id=6e6ea481cac14a94827fe240ba9c27d1
+2026-11-14 09:42:12,569 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=2cb4824c72b14f17a412bec684f085a5 | Span completed | span_name=llm.invoke | duration_seconds=0.855
+2026-11-14 09:42:12,569 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | LLM invocation completed | duration_seconds=0.856 | tool_call_count=0
+2026-11-14 09:42:12,572 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=6e6ea481cac14a94827fe240ba9c27d1 | Span completed | span_name=graph.invoke | duration_seconds=2.126
+2026-11-14 09:42:12,573 | INFO | shopping_assistant | trace_id=96058731325b4cbbb535535ba8850703 | span_id=- | Graph execution completed | duration_seconds=2.126
+2026-11-14 09:42:12,576 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=- | New agent request started | conversation=2 | trace_id=a4f58fa81b094309875d61aa07f18693
+2026-11-14 09:42:12,576 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 09:42:12,582 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | LLM node started | message_count=1
+2026-11-14 09:42:12,585 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:12,587 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=6678d66461eb48a3aee052fc499a217c | Span started | span_name=llm.invoke | parent_span_id=e64cc23f6171480794200be73b790b99
+2026-11-14 09:42:12,840 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=6678d66461eb48a3aee052fc499a217c | Span completed | span_name=llm.invoke | duration_seconds=0.253
+2026-11-14 09:42:12,841 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | LLM invocation completed | duration_seconds=0.254 | tool_call_count=1
+2026-11-14 09:42:12,849 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=f578ba1d142049ab8c5b31e6effaa23d | Span started | span_name=tool.compare_product | parent_span_id=e64cc23f6171480794200be73b790b99
+2026-11-14 09:42:12,850 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=f578ba1d142049ab8c5b31e6effaa23d | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 09:42:12,856 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=f578ba1d142049ab8c5b31e6effaa23d | Product comparison completed | duration_seconds=0.006 | status=success
+2026-11-14 09:42:12,857 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=f578ba1d142049ab8c5b31e6effaa23d | Span completed | span_name=tool.compare_product | duration_seconds=0.008
+2026-11-14 09:42:12,863 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | LLM node started | message_count=3
+2026-11-14 09:42:12,872 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:12,873 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=9a1b0b1d4fd1476dbb43e6a570a67a15 | Span started | span_name=llm.invoke | parent_span_id=e64cc23f6171480794200be73b790b99
+2026-11-14 09:42:13,646 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=9a1b0b1d4fd1476dbb43e6a570a67a15 | Span completed | span_name=llm.invoke | duration_seconds=0.773
+2026-11-14 09:42:13,647 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | LLM invocation completed | duration_seconds=0.774 | tool_call_count=0
+2026-11-14 09:42:13,653 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=e64cc23f6171480794200be73b790b99 | Span completed | span_name=graph.invoke | duration_seconds=1.076
+2026-11-14 09:42:13,653 | INFO | shopping_assistant | trace_id=a4f58fa81b094309875d61aa07f18693 | span_id=- | Graph execution completed | duration_seconds=1.077
+2026-11-14 09:42:47,294 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=- | New agent request started | conversation=1 | trace_id=cbc36191770145b283784e559123fdb0
+2026-11-14 09:42:47,295 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 09:42:47,304 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM node started | message_count=1
+2026-11-14 09:42:47,305 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:47,306 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=338c647b32754c61bc516e7c6187b62c | Span started | span_name=llm.invoke | parent_span_id=1f46343ae2ab4404b9611e07db36de0b
+2026-11-14 09:42:48,294 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=338c647b32754c61bc516e7c6187b62c | Span completed | span_name=llm.invoke | duration_seconds=0.988
+2026-11-14 09:42:48,294 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM invocation completed | duration_seconds=0.988 | tool_call_count=1
+2026-11-14 09:42:48,301 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=258bd7819426463daf83eb1228e88aa0 | Span started | span_name=tool.search_product | parent_span_id=1f46343ae2ab4404b9611e07db36de0b
+2026-11-14 09:42:48,306 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=258bd7819426463daf83eb1228e88aa0 | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-14 09:42:48,312 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=258bd7819426463daf83eb1228e88aa0 | Product search completed | duration_seconds=0.004 | result_count=7
+2026-11-14 09:42:48,319 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=258bd7819426463daf83eb1228e88aa0 | Span completed | span_name=tool.search_product | duration_seconds=0.018
+2026-11-14 09:42:48,323 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM node started | message_count=3
+2026-11-14 09:42:48,326 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:48,331 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=7b00d89b47a54ce197ca470e834060cf | Span started | span_name=llm.invoke | parent_span_id=1f46343ae2ab4404b9611e07db36de0b
+2026-11-14 09:42:48,842 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=7b00d89b47a54ce197ca470e834060cf | Span completed | span_name=llm.invoke | duration_seconds=0.511
+2026-11-14 09:42:48,842 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM invocation completed | duration_seconds=0.511 | tool_call_count=1
+2026-11-14 09:42:48,846 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=44edc80862b64f84b641a21c8da0bb17 | Span started | span_name=tool.compare_product | parent_span_id=1f46343ae2ab4404b9611e07db36de0b
+2026-11-14 09:42:48,846 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=44edc80862b64f84b641a21c8da0bb17 | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 09:42:48,847 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=44edc80862b64f84b641a21c8da0bb17 | Product comparison completed | duration_seconds=0.001 | status=success
+2026-11-14 09:42:48,848 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=44edc80862b64f84b641a21c8da0bb17 | Span completed | span_name=tool.compare_product | duration_seconds=0.002
+2026-11-14 09:42:48,849 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM node started | message_count=5
+2026-11-14 09:42:48,851 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:48,851 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=cf7270c7bc7b485189a13bfec6edc798 | Span started | span_name=llm.invoke | parent_span_id=1f46343ae2ab4404b9611e07db36de0b
+2026-11-14 09:42:49,670 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=cf7270c7bc7b485189a13bfec6edc798 | Span completed | span_name=llm.invoke | duration_seconds=0.818
+2026-11-14 09:42:49,670 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | LLM invocation completed | duration_seconds=0.819 | tool_call_count=0
+2026-11-14 09:42:49,672 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=1f46343ae2ab4404b9611e07db36de0b | Span completed | span_name=graph.invoke | duration_seconds=2.377
+2026-11-14 09:42:49,672 | INFO | shopping_assistant | trace_id=cbc36191770145b283784e559123fdb0 | span_id=- | Graph execution completed | duration_seconds=2.378
+2026-11-14 09:42:49,673 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=- | New agent request started | conversation=2 | trace_id=ab2df908f3994fab8bf4b89eb0a91b39
+2026-11-14 09:42:49,673 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | Span started | span_name=graph.invoke | parent_span_id=-
+2026-11-14 09:42:49,675 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | LLM node started | message_count=1
+2026-11-14 09:42:49,677 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:49,678 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=dea505247fad4a8184187a081a5473b3 | Span started | span_name=llm.invoke | parent_span_id=07c2478fd9c844b6ba01ed922dbec464
+2026-11-14 09:42:50,194 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=dea505247fad4a8184187a081a5473b3 | Span completed | span_name=llm.invoke | duration_seconds=0.516
+2026-11-14 09:42:50,195 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | LLM invocation completed | duration_seconds=0.517 | tool_call_count=1
+2026-11-14 09:42:50,222 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=c69f62ad828247c2b93168440a876ae1 | Span started | span_name=tool.compare_product | parent_span_id=07c2478fd9c844b6ba01ed922dbec464
+2026-11-14 09:42:50,222 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=c69f62ad828247c2b93168440a876ae1 | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 09:42:50,224 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=c69f62ad828247c2b93168440a876ae1 | Product comparison completed | duration_seconds=0.002 | status=success
+2026-11-14 09:42:50,224 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=c69f62ad828247c2b93168440a876ae1 | Span completed | span_name=tool.compare_product | duration_seconds=0.002
+2026-11-14 09:42:50,228 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | LLM node started | message_count=3
+2026-11-14 09:42:50,230 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | Customer preferences retrieved | preference_count=3
+2026-11-14 09:42:50,232 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=5abbc9ae5f3d473cb0c30407d5f62e01 | Span started | span_name=llm.invoke | parent_span_id=07c2478fd9c844b6ba01ed922dbec464
+2026-11-14 09:42:50,880 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=5abbc9ae5f3d473cb0c30407d5f62e01 | Span completed | span_name=llm.invoke | duration_seconds=0.648
+2026-11-14 09:42:50,880 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | LLM invocation completed | duration_seconds=0.648 | tool_call_count=0
+2026-11-14 09:42:50,883 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=07c2478fd9c844b6ba01ed922dbec464 | Span completed | span_name=graph.invoke | duration_seconds=1.210
+2026-11-14 09:42:50,883 | INFO | shopping_assistant | trace_id=ab2df908f3994fab8bf4b89eb0a91b39 | span_id=- | Graph execution completed | duration_seconds=1.210
+2026-11-14 11:15:57,781 | INFO | shopping_assistant | trace_id=- | span_id=3dd594bcbb0a4943906e571e0a1ac8e4 | Span started | span_name=tool.search_product | parent_span_id=-
+2026-11-14 11:15:57,782 | INFO | shopping_assistant | trace_id=- | span_id=3dd594bcbb0a4943906e571e0a1ac8e4 | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-14 11:15:57,793 | INFO | shopping_assistant | trace_id=- | span_id=3dd594bcbb0a4943906e571e0a1ac8e4 | Product search completed | duration_seconds=0.011 | result_count=7
+2026-11-14 11:15:57,794 | INFO | shopping_assistant | trace_id=- | span_id=3dd594bcbb0a4943906e571e0a1ac8e4 | Span completed | span_name=tool.search_product | duration_seconds=0.012
+2026-11-14 11:15:57,795 | INFO | shopping_assistant | trace_id=- | span_id=7b0021881b9b4760b5b4ff75935a0bcb | Span started | span_name=tool.search_product | parent_span_id=-
+2026-11-14 11:15:57,795 | INFO | shopping_assistant | trace_id=- | span_id=7b0021881b9b4760b5b4ff75935a0bcb | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-14 11:15:57,797 | INFO | shopping_assistant | trace_id=- | span_id=7b0021881b9b4760b5b4ff75935a0bcb | Product search completed | duration_seconds=0.001 | result_count=7
+2026-11-14 11:15:57,797 | INFO | shopping_assistant | trace_id=- | span_id=7b0021881b9b4760b5b4ff75935a0bcb | Span completed | span_name=tool.search_product | duration_seconds=0.002
+2026-11-14 11:15:57,799 | INFO | shopping_assistant | trace_id=- | span_id=63d0cdb22e4c46f7837ff94342058132 | Span started | span_name=tool.compare_product | parent_span_id=-
+2026-11-14 11:15:57,799 | INFO | shopping_assistant | trace_id=- | span_id=63d0cdb22e4c46f7837ff94342058132 | Product comparison started | product_1=Organic Raw Honey | product_2=Wildflower Honey
+2026-11-14 11:15:57,802 | INFO | shopping_assistant | trace_id=- | span_id=63d0cdb22e4c46f7837ff94342058132 | Product comparison completed | duration_seconds=0.002 | status=success
+2026-11-14 11:15:57,802 | INFO | shopping_assistant | trace_id=- | span_id=63d0cdb22e4c46f7837ff94342058132 | Span completed | span_name=tool.compare_product | duration_seconds=0.003
+2026-11-14 11:15:57,803 | INFO | shopping_assistant | trace_id=- | span_id=f820aacd39ea4affaa9879b21ce3db73 | Span started | span_name=tool.search_product | parent_span_id=-
+2026-11-14 11:15:57,803 | INFO | shopping_assistant | trace_id=- | span_id=f820aacd39ea4affaa9879b21ce3db73 | Product search started | category=category_that_does_not_exist_12345 | max_price=None | sort_by=price_asc
+2026-11-14 11:15:57,805 | INFO | shopping_assistant | trace_id=- | span_id=f820aacd39ea4affaa9879b21ce3db73 | Product search completed | duration_seconds=0.001 | result_count=0
+2026-11-14 11:15:57,808 | INFO | shopping_assistant | trace_id=- | span_id=f820aacd39ea4affaa9879b21ce3db73 | Span completed | span_name=tool.search_product | duration_seconds=0.004
+2026-11-14 11:15:57,810 | INFO | shopping_assistant | trace_id=- | span_id=3e326c1927e8419a9e8ede1a1368d98a | Span started | span_name=tool.search_product | parent_span_id=-
+2026-11-14 11:15:57,810 | ERROR | shopping_assistant | trace_id=- | span_id=3e326c1927e8419a9e8ede1a1368d98a | Span failed | span_name=tool.search_product | duration_seconds=0.001 | error_type=ValueError

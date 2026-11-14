@@ -22,3 +22,22 @@ def get_connection():
     conn.row_factory = sqlite3.Row
 
     return conn
+
+def get_readonly_connection():
+    """Create a read-only SQLite database connection."""
+
+    if not DB_PATH.is_file():
+        raise FileNotFoundError(
+            f"Database not found: {DB_PATH}"
+        )
+
+    database_uri = f"{DB_PATH.resolve().as_uri()}?mode=ro"
+
+    conn = sqlite3.connect(
+        database_uri,
+        uri=True
+    )
+
+    conn.row_factory = sqlite3.Row
+
+    return conn
