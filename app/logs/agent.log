@@ -458,3 +458,19 @@ During task with name 'llm' and id 'd7bd41b8-63e7-a158-6e7c-5db1f54eae0b'
 2026-11-14 11:15:57,808 | INFO | shopping_assistant | trace_id=- | span_id=f820aacd39ea4affaa9879b21ce3db73 | Span completed | span_name=tool.search_product | duration_seconds=0.004
 2026-11-14 11:15:57,810 | INFO | shopping_assistant | trace_id=- | span_id=3e326c1927e8419a9e8ede1a1368d98a | Span started | span_name=tool.search_product | parent_span_id=-
 2026-11-14 11:15:57,810 | ERROR | shopping_assistant | trace_id=- | span_id=3e326c1927e8419a9e8ede1a1368d98a | Span failed | span_name=tool.search_product | duration_seconds=0.001 | error_type=ValueError
+2026-11-14 11:51:56,787 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | Span started | span_name=integration_test | parent_span_id=-
+2026-11-14 11:51:56,797 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | LLM node started | message_count=1
+2026-11-14 11:51:56,798 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | Customer preferences retrieved | preference_count=0
+2026-11-14 11:51:56,799 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=0348ed654c7e4671a8b3384efc63a0db | Span started | span_name=llm.invoke | parent_span_id=cea57a04eebe4b56822ec65d164f836b
+2026-11-14 11:51:56,800 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=0348ed654c7e4671a8b3384efc63a0db | Span completed | span_name=llm.invoke | duration_seconds=0.001
+2026-11-14 11:51:56,800 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | LLM invocation completed | duration_seconds=0.001 | tool_call_count=1
+2026-11-14 11:51:56,805 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=c0f4c97a91444359971839bcd4abbf18 | Span started | span_name=tool.search_product | parent_span_id=cea57a04eebe4b56822ec65d164f836b
+2026-11-14 11:51:56,805 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=c0f4c97a91444359971839bcd4abbf18 | Product search started | category=honey | max_price=20.0 | sort_by=price_asc
+2026-11-14 11:51:56,808 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=c0f4c97a91444359971839bcd4abbf18 | Product search completed | duration_seconds=0.002 | result_count=7
+2026-11-14 11:51:56,809 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=c0f4c97a91444359971839bcd4abbf18 | Span completed | span_name=tool.search_product | duration_seconds=0.004
+2026-11-14 11:51:56,813 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | LLM node started | message_count=3
+2026-11-14 11:51:56,820 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | Customer preferences retrieved | preference_count=0
+2026-11-14 11:51:56,820 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=ce1268cf9df34b32ad2c4e05b5fabaeb | Span started | span_name=llm.invoke | parent_span_id=cea57a04eebe4b56822ec65d164f836b
+2026-11-14 11:51:56,821 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=ce1268cf9df34b32ad2c4e05b5fabaeb | Span completed | span_name=llm.invoke | duration_seconds=0.001
+2026-11-14 11:51:56,822 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | LLM invocation completed | duration_seconds=0.002 | tool_call_count=0
+2026-11-14 11:51:56,828 | INFO | shopping_assistant | trace_id=faf358dde3544b8892cdefc82c2d5c78 | span_id=cea57a04eebe4b56822ec65d164f836b | Span completed | span_name=integration_test | duration_seconds=0.040
