@@ -1,7 +1,13 @@
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
-from llm import get_llm
-from tools.product_tools import check_product_tool, search_product_tool, compare_product_tool
+from .llm import get_llm
+from .tools.product_tools import (
+    check_product_tool,
+    search_product_tool,
+    compare_product_tool
+)
+
+
 
 agent = create_agent(
     model = get_llm(),

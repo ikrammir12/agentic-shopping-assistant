@@ -1,7 +1,7 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
-
+load_dotenv()
 def get_llm():
     """Create and return a ChatGroq instance with the API key from the .env file."""
     
