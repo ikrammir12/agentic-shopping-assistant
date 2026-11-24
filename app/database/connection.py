@@ -20,7 +20,7 @@ def get_connection():
 
     # Return rows as dictionary-like objects
     conn.row_factory = sqlite3.Row
-
+    conn.execute("PRAGMA foreign_keys = ON")
     return conn
 
 def get_readonly_connection():
