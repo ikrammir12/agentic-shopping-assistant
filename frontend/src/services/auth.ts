@@ -1,3 +1,6 @@
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || ''
+).replace(/\/$/, '')
 
 export type RegisterResponse = {
   message: string
@@ -8,7 +11,7 @@ export async function registerUser(
   email: string,
   password: string
 ): Promise<RegisterResponse> {
-  const response = await fetch('/api/auth/register', {
+  const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,7 +46,7 @@ export async function loginUser(
   email: string,
   password: string
 ): Promise<LoginResponse> {
-  const response = await fetch('/api/auth/login', {
+  const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -71,7 +74,7 @@ export async function loginUser(
 export async function verifyToken(
   token: string
 ): Promise<boolean> {
-  const response = await fetch('/api/auth/verify', {
+  const response = await fetch(`${API_BASE_URL}/api/auth/verify`, {
     method: 'GET',
     headers: {
       Authorization: `Bearer ${token}`,

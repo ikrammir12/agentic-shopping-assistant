@@ -1,7 +1,9 @@
 
 from contextlib import asynccontextmanager
 import json
+import os
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
 from .database.memory import create_memory_table
@@ -55,6 +57,25 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Agentic Shopping Assistant",
     lifespan=lifespan
+)
+
+# Allow the deployed frontend (and local Vite during development) to call this API.
+# Set FRONTEND_ORIGINS in the hosting provider as a comma-separated list of origins.
+allowed_origins = [
+    origin.strip().rstrip("/")
+    for origin in os.getenv(
+        "FRONTEND_ORIGINS",
+        "http://localhost:5173,http://127.0.0.1:5173"
+    ).split(",")
+    if origin.strip()
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 bearer_scheme = HTTPBearer(auto_error=False)

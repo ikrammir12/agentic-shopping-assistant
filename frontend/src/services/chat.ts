@@ -1,3 +1,7 @@
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || ''
+).replace(/\/$/, '')
+
 export type ChatProduct = {
   id: number
   name: string
@@ -105,14 +109,13 @@ export async function sendChatMessageStream(
   conversationId: string,
   callbacks: StreamCallbacks = {}
 ): Promise<ChatResponse> {
-
   const token = localStorage.getItem('access_token')
 
   if (!token) {
     throw new Error('Please log in to continue.')
   }
 
-  const response = await fetch('/api/chat/stream', {
+  const response = await fetch(`${API_BASE_URL}/api/chat/stream`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -156,18 +159,15 @@ export async function sendChatMessageStream(
   // Send all events to the React component.
   async function emitEvent(event: ExecutionEvent) {
     console.log('[BLINK EXECUTION EVENT]', event.type, event.payload)
-
     await callbacks.onEvent?.(event)
   }
 
   // Process one Server-Sent Event.
   async function processEvent(frame: string): Promise<void> {
-
     let eventName = ''
     const dataLines: string[] = []
 
     for (const line of frame.split(/\r?\n/)) {
-
       if (line.startsWith('event:')) {
         eventName = line.slice(6).trim()
       } else if (line.startsWith('data:')) {
@@ -182,50 +182,30 @@ export async function sendChatMessageStream(
     const payload = JSON.parse(dataLines.join('\n'))
 
     switch (eventName) {
-
       case 'request_start':
-        await emitEvent({
-          type: 'request_start',
-          payload,
-        })
+        await emitEvent({ type: 'request_start', payload })
         break
 
       case 'graph_start':
-        await emitEvent({
-          type: 'graph_start',
-          payload,
-        })
+        await emitEvent({ type: 'graph_start', payload })
         break
 
       case 'llm_start':
-        await emitEvent({
-          type: 'llm_start',
-          payload,
-        })
+        await emitEvent({ type: 'llm_start', payload })
         break
 
       case 'llm_end':
-        await emitEvent({
-          type: 'llm_end',
-          payload,
-        })
+        await emitEvent({ type: 'llm_end', payload })
         break
 
       case 'tool_call':
-        await emitEvent({
-          type: 'tool_call',
-          payload,
-        })
+        await emitEvent({ type: 'tool_call', payload })
         break
 
       case 'tool_start': {
         const toolEvent = payload as ToolStartEvent
 
-        await emitEvent({
-          type: 'tool_start',
-          payload: toolEvent,
-        })
-
+        await emitEvent({ type: 'tool_start', payload: toolEvent })
         await callbacks.onToolStart?.(toolEvent)
         break
       }
@@ -233,11 +213,7 @@ export async function sendChatMessageStream(
       case 'tool_end': {
         const toolEvent = payload as ToolEndEvent
 
-        await emitEvent({
-          type: 'tool_end',
-          payload: toolEvent,
-        })
-
+        await emitEvent({ type: 'tool_end', payload: toolEvent })
         await callbacks.onToolEnd?.(toolEvent)
         break
       }
@@ -246,18 +222,13 @@ export async function sendChatMessageStream(
         const finalEvent = payload as ChatResponse
 
         finalResponse = finalEvent
-
-        await emitEvent({
-          type: 'final',
-          payload: finalEvent,
-        })
+        await emitEvent({ type: 'final', payload: finalEvent })
         break
       }
 
       case 'error':
         throw new Error(
-          payload.message ||
-          'Blink AI could not complete your request.'
+          payload.message || 'Blink AI could not complete your request.'
         )
 
       default:
@@ -266,9 +237,7 @@ export async function sendChatMessageStream(
   }
 
   try {
-
     while (true) {
-
       const { value, done } = await reader.read()
 
       const decodedChunk = decoder.decode(value, {
@@ -280,7 +249,6 @@ export async function sendChatMessageStream(
       }
 
       const frames = buffer.split(/\r?\n\r?\n/)
-
       buffer = frames.pop() ?? ''
 
       // Process each event in order.
@@ -289,23 +257,18 @@ export async function sendChatMessageStream(
       }
 
       if (done) {
-
         if (buffer.trim()) {
           await processEvent(buffer)
         }
-
         break
       }
     }
-
   } finally {
     reader.releaseLock()
   }
 
   if (!finalResponse) {
-    throw new Error(
-      'Blink AI ended without returning a final response.'
-    )
+    throw new Error('Blink AI ended without returning a final response.')
   }
 
   return finalResponse
