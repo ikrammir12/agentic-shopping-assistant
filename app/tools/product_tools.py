@@ -5,12 +5,11 @@
 
 from langchain.tools import tool
 from contextlib import closing
-from database.connection import get_readonly_connection
+from ..database.connection import get_readonly_connection
 import math
-from logging_config import logger
 import sqlite3
 import time
-from logging_config import logger, traced
+from ..logging_config import logger, traced
 
 
 @tool
@@ -83,7 +82,7 @@ def validate_search_input(category, max_price, sort_by):
             raise ValueError("Budget must be positive.")
 
     # Validate sorting option
-    allowed_sort_options = {"price_asc", "price_desc", "name"}
+    allowed_sort_options = {"price_asc", "price_desc", "name", "rating_desc"}
 
     if not isinstance(sort_by, str):
         raise ValueError("Sorting option must be a string.")
@@ -93,7 +92,8 @@ def validate_search_input(category, max_price, sort_by):
     if sort_by not in allowed_sort_options:
         raise ValueError("Invalid sorting option.")
 
-    return category.strip(), max_price, sort_by
+    return category.strip().lower(), max_price, sort_by
+
 
 
 @tool
@@ -101,11 +101,18 @@ def validate_search_input(category, max_price, sort_by):
 def search_product_tool(
     category: str,
     max_price: float | None = None,
-    sort_by: str = "price_asc"
-) -> list:
+    sort_by: str = "price_asc",
+    organic_only: bool = False
+) -> list | str:
     """
-    Search products by category with an optional maximum price.
-    Sort results by price ascending, descending, or product name.
+    Search products by category with optional maximum price
+    and organic-only filtering.
+
+    Also returns average customer rating and review count
+    calculated from the reviews database.
+
+    Sort results by price ascending, price descending, product name,
+    or average customer rating descending.
     """
 
     # Step 1: Validate inputs
@@ -116,36 +123,72 @@ def search_product_tool(
     )
 
     logger.info(
-        "Product search started | category=%s | max_price=%s | sort_by=%s",
+        "Product search started | category=%s | max_price=%s "
+        "| sort_by=%s | organic_only=%s",
         category,
         max_price,
-        sort_by
+        sort_by,
+        organic_only
     )
 
-    # Step 2: Base SQL query
+    # Step 2: Base SQL query with review aggregation
     query = """
-        SELECT id, name, category, description, price
-        FROM products
-        WHERE category = ?
+        SELECT
+            p.id,
+            p.name,
+            p.category,
+            p.description,
+            p.price,
+            p.is_organic,
+
+            r.average_rating,
+            COALESCE(r.review_count, 0) AS review_count
+
+        FROM products p
+
+        LEFT JOIN (
+            SELECT
+                product_id,
+                ROUND(AVG(rating), 2) AS average_rating,
+                COUNT(rating) AS review_count
+            FROM reviews
+            GROUP BY product_id
+        ) r ON p.id = r.product_id
+
+        WHERE p.category = ?
     """
 
     parameters = [category]
 
     # Step 3: Apply optional budget filter
     if max_price is not None:
-        query += " AND price <= ?"
+        query += " AND p.price <= ?"
         parameters.append(max_price)
 
-    # Step 4: Apply sorting
+    # Step 4: Apply organic-only filter
+    if organic_only:
+        query += " AND p.is_organic = ?"
+        parameters.append(1)
+
+    # Step 5: Apply sorting
     sort_options = {
-        "price_asc": "price ASC",
-        "price_desc": "price DESC",
-        "name": "name COLLATE NOCASE ASC"
+        "price_asc": "p.price ASC",
+        "price_desc": "p.price DESC",
+        "name": "p.name COLLATE NOCASE ASC",
+        # Products without ratings are placed last. Ties are broken by
+        # review count, then price, then name for deterministic results.
+        "rating_desc": (
+            "CASE WHEN r.average_rating IS NULL THEN 1 ELSE 0 END ASC, "
+            "r.average_rating DESC, "
+            "r.review_count DESC, "
+            "p.price ASC, "
+            "p.name COLLATE NOCASE ASC"
+        ),
     }
 
     query += f" ORDER BY {sort_options[sort_by]}"
 
-    # Step 5: Measure database execution time
+    # Step 6: Measure database execution time
     start_time = time.perf_counter()
 
     try:
@@ -161,10 +204,23 @@ def search_product_tool(
         duration = time.perf_counter() - start_time
 
         logger.info(
-            "Product search completed | duration_seconds=%.3f | result_count=%d",
+            "Product search completed | duration_seconds=%.3f "
+            "| result_count=%d | organic_only=%s",
             duration,
-            len(products)
+            len(products),
+            organic_only
         )
+
+        # An empty list can be serialized as empty tool content. Some model
+        # providers reject an empty role=tool content field, preventing the
+        # agent from generating a helpful no-results response. Return a
+        # non-empty explanation when there are no matches.
+        if not products:
+            return (
+                f"No products found in category '{category}' with the current "
+                "filters. Explain that no matches were found and suggest "
+                "relaxing the budget or product filters."
+            )
 
         return products
 
@@ -172,10 +228,12 @@ def search_product_tool(
         duration = time.perf_counter() - start_time
 
         logger.exception(
-            "Database error while searching products | duration_seconds=%.3f | category=%s",
+            "Database error while searching products "
+            "| duration_seconds=%.3f | category=%s",
             duration,
             category
         )
+
         raise
 
 
@@ -218,7 +276,7 @@ def compare_product_tool(
                     FROM products p
                     LEFT JOIN reviews r
                         ON p.id = r.product_id
-                    WHERE p.name = ?
+                    WHERE p.name COLLATE NOCASE = ?
                     GROUP BY p.id, p.name, p.price
                 """, (product_name,))
 
